@@ -1,9 +1,9 @@
 <template>
   <div class='main'>
       <h1>Рецепты</h1>
-      <a href="/Recipes">
-          <button class='btn btn_first'>Я знаю что ищу</button>
-      </a>
+      <router-link to='/Recipes'>
+        <button class='btn btn_first'>Я знаю что ищу</button>
+      </router-link>
       <a href="https://linara-khadimullina.shinyapps.io/recipes_recommender/">
           <button class='btn btn_second'>Посоветуйте мне</button>
       </a>
