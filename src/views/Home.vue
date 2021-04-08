@@ -1,18 +1,40 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class='main'>
+      <h1>Рецепты</h1>
+      <a href="/Recipes">
+          <button class='btn btn_first'>Я знаю что ищу</button>
+      </a>
+      <a href="https://linara-khadimullina.shinyapps.io/recipes_recommender/">
+          <button class='btn btn_second'>Посоветуйте мне</button>
+      </a>
   </div>
 </template>
 
-<script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+<style lang="scss" scope>
+    .btn{
+        padding: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        border: none;
+        &:first-child{
+            margin-right: 20px;
+        }
+        &_first{
+            background-color:crimson;
+            &:hover{
+                background-color: darken($color: crimson, $amount: 10);
+            }
+        }
+        &_second{
+            background-color: darkorchid;
+            &:hover{
+                background-color: darken($color: darkorchid, $amount: 10);
+            }
+        }
+    }
+</style>
 
+<script>
 export default {
-  name: 'Home',
-  components: {
-    HelloWorld
-  }
 }
 </script>
