@@ -4,8 +4,8 @@
     <div class="inputs">
         <input 
         type="text" placeholder="Я знаю название рецепта" v-model='searchRecipe'>
-      <!--  <input 
-        type="text" placeholder='Я знаю ингредиент' v-model='searchIngr'> -->
+        <input 
+        type="text" placeholder='Я знаю ингредиент' v-model='searchIngr'>
     </div>
     <div>
       <div class='recipes'>
