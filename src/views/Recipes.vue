@@ -1,11 +1,13 @@
 <template>
   <div class='main'>
-    <h1> Рецепты </h1>
+    <h1> Recipes </h1>
     <div class="inputs">
+        <p>The input for users who do not keep the recipe in the mind, but they keep in mind the name of a recipe:</p>
         <input 
-        type="text" placeholder="Я знаю название рецепта" v-model='searchRecipe'>
+        type="text" placeholder="I know the recipe name" v-model='searchRecipe'>
+        <p>The input for users who have exactly 1 ingredient in the fridge and want to mix it with anything to get a nice meal:</p>
         <input 
-        type="text" placeholder='Я знаю ингредиент' v-model='searchIngr'>
+        type="text" placeholder='I know one ingredient' v-model='searchIngr'>
     </div>
     <div>
       <div class='recipes'>

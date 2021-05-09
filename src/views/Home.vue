@@ -1,32 +1,41 @@
 <template>
   <div class='main'>
-      <h1>Рецепты</h1>
+      <h1>Recipes</h1>
       <router-link to='/Recipes'>
-        <button class='btn btn_first'>Я знаю что ищу</button>
+        <button class='btn btn_first'>I do know what I am looking for</button>
       </router-link>
       <a href="https://linara-khadimullina.shinyapps.io/recipes_recommender/">
-          <button class='btn btn_second'>Посоветуйте мне</button>
+          <button class='btn btn_second'>Advice me something!</button>
       </a>
   </div>
 </template>
 
 <style lang="scss" scope>
+    .main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .btn{
-        padding: 5px;
+        padding: 15px;
         border-radius: 5px;
         cursor: pointer;
         border: none;
-        &:first-child{
-            margin-right: 20px;
-        }
+        color: #fff;
+        font-weight: 600;
+        margin-bottom: 22px;
+        width: 260px;
+        // &:first-child{
+        //     // margin-right: 20px;
+        // }
         &_first{
-            background-color:crimson;
+            background-color:rgb(8, 151, 15);
             &:hover{
-                background-color: darken($color: crimson, $amount: 10);
+                background-color: darken($color: rgb(8, 151, 15), $amount: 10);
             }
         }
         &_second{
-            background-color: darkorchid;
+            background-color: rgb(165, 9, 243);
             &:hover{
                 background-color: darken($color: darkorchid, $amount: 10);
             }
