@@ -15,7 +15,7 @@
             {{tag}}
           </option>
         </select>
-        <select id='select2' >
+        <!-- <select id='select2' >
           <option v-for='tag in tagOptions' :key='tag' :value=tag>
             {{tag}}
           </option>
@@ -24,7 +24,7 @@
           <option v-for='tag in tagOptions' :key='tag' :value=tag>
             {{tag}}
           </option>
-        </select>
+        </select> -->
 
     </div>
     <div>
@@ -39,7 +39,7 @@
             <p><span>Follow the instruction:</span>
             {{d.Directions}}</p> 
 
-            <p class='tags'> <span>Tags:  </span> {{d.kw1}} , {{d.kw2}}, {{d.kw3}}</p>
+            <p class='tags'> <span>Tag:  </span> {{d.kw1}} </p>
           </div> 
         </div> 
       </div>
