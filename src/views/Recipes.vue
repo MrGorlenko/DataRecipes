@@ -4198,7 +4198,6 @@ export default {
 "Cooling",
 "Layered food",
 "With sauce",
-"With dough",
       ]
 
     }

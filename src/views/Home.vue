@@ -25,9 +25,6 @@
         font-weight: 600;
         margin-bottom: 22px;
         width: 260px;
-        // &:first-child{
-        //     // margin-right: 20px;
-        // }
         &_first{
             background-color:rgb(8, 151, 15);
             &:hover{
